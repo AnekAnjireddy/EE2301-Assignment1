@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.2)  7 AUG 2023 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.2)  8 AUG 2023 21:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,21 +1118,19 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
 4.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 94.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 94.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 94.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
 94.
-
 (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
@@ -1236,56 +1234,160 @@ LaTeX Info: Redefining \ohm on input line 94.
 Package gensymb Info: Using \textohm for \ohm on input line 94.
 Package gensymb Info: Using \textmu for \micro on input line 94.
 Package hyperref Info: Link coloring OFF on input line 94.
+
+(./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-87.
 
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 1.2.2 Find the equations of \vec{A}
+                                         D,\vec{B}E,\vec{C}F where \vec{D},\...
+
+? 
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 1.2.2 Find the equations of \vec{A}D,\vec{B}
+                                                  E,\vec{C}F where \vec{D},\...
+
+? 
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ...he equations of \vec{A}D,\vec{B}E,\vec{C}
+                                                  F where \vec{D},\vec{E},\v...
+
+? 
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ... \vec{A}D,\vec{B}E,\vec{C}F where \vec{D}
+                                                  ,\vec{E},\vec{F} are midpo...
+
+? 
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ...D,\vec{B}E,\vec{C}F where \vec{D},\vec{E}
+                                                  ,\vec{F} are midpoints of ...
+
+? 
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ...}E,\vec{C}F where \vec{D},\vec{E},\vec{F}
+                                                   are midpoints of the tria...
+
+? 
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ...{F} are midpoints of the triangle \vec{A}
+                                                  BC. The vertices \vec{A},B...
+
+? 
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ... triangle \vec{A}BC. The vertices \vec{A}
+                                                  ,B,C are:
+? 
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
+86.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-87.
+86.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-87.
+86.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-87.
+86.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
-87.
+86.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr
-/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}
+)
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 The equation for \vec
+                           {AD} is given by
+? 
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 The parametric equation for \vec
+                                      {BE} is given by
+? 
+[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
+ocal/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ] (./main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29954 strings out of 476025
- 592785 string characters out of 5790018
- 1887388 words of memory out of 5000000
+ 29964 strings out of 476025
+ 592891 string characters out of 5790018
+ 1900388 words of memory out of 5000000
  49765 multiletter control sequences out of 15000+600000
  568160 words of font info for 143 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1296,10 +1398,10 @@ texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 39801 bytes).
+Output written on main.pdf (1 page, 40924 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
+ 76 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 26 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
