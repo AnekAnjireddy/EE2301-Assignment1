@@ -182,12 +182,13 @@ Problem 1
 
 \begin{flushleft}
 
-1.2.2 Find the equations of \vec{A}D,\vec{B}E,\vec{C}F where \vec{D},\vec{E},\vec{F} are midpoints of the triangle \vec{A}BC. The vertices \vec{A},B,C are:
+1.2.2 Find the equations of \vec{AD},\vec{BE},\vec{CF} where \vec{D},\vec{E},\vec{F} are midpoints of the triangle \vec{ABC}. The vertices \vec{A,B,C} are:
 \begin{align}
 	\vec {A}= &\myvec{1\\-1};\\
 	\vec {B}= &\myvec{-4\\6};\\
 	\vec {C}= &\myvec{-3\\-5};
 \end{align}
+\\ \solution
 
 Given this information and using the midpoint values found in the questions 1.2.1, the midpoints D,E,F are:
 
@@ -197,70 +198,138 @@ Given this information and using the midpoint values found in the questions 1.2.
 	\vec {F}= &\myvec{\frac{-3}{2}\\\frac{5}{2}};
 \end{align}
 
-The equation for \vec{AD} is given by
+The normal equation for the side $AD$ is
 \begin{align}
-\vec{x} &= \vec{A} + k\vec{m}
+\vec{n}^{\top}\myvec{\vec{x}-\vec{A}}&=0\\
+\implies
+\vec{n}^{\top}\vec{x}&=\vec{n}^{\top}\vec{A}
 \end{align}
-
-where
-
-\begin{align}
-\vec{m} &= \vec{D} -\vec{A}\\
-&= \myvec{\frac{-7}{2}\\ \frac{1}{2}} -\myvec{1\\ -1}\\
-&= \myvec{\frac{-9}{2}\\\frac{3}{2}}
-\end{align}
-
-Hence we get,
+Now we should find $\vec{n}$ so that we can find $\vec{n}^{\top}$.
 
 \begin{align}
-\vec{AD}: \vec{x} = &\myvec{1\\-1} + k \myvec{\frac{-9}{2}\\\frac{3}{2}}
+  \vec{n} &= \myvec{0 & 1\\-1 & 0}\vec{m}
 \end{align}
-
-The parametric equation for \vec{BE} is given by
+Where $\vec{m} = \vec{D}- \vec{A}$ for median $\vec{AD}$
 \begin{align}
-\vec{x} &= \vec{B} + k\vec{m}
+\implies
+\vec{m}&=\myvec{\frac{-7}{2}\\\frac{1}{2}} - \myvec{1\\-1}\\
+&=\myvec{\frac{-9}{2}\\\frac{3}{2}}
 \end{align}
 
-where
-
+we can use this to obtain vector $\vec{n}$
 \begin{align}
-\vec{m} &= \vec{E} -\vec{B}\\
-&= \myvec{-1 \\ -3} -\myvec{-4\\ 6}\\
-&= \myvec{3 \\-9}
+\vec{n} &= \myvec{0 & 1\\
+  -1 & 0}\myvec{\frac{-9}{2}\\\frac{3}{2}}
+ = \myvec{\frac{3}{2}\\\frac{9}{2}}
 \end{align}
-
-Hence we get,
+The transpose of $\vec{n}$ is
 \begin{align}
-\vec{BE}: \vec{x} = &\myvec{-4\\6} + k \myvec{3\\-9}
+  \vec{n}^{\top}&=\myvec{\frac{3}{2} & \frac{9}{2}}
 \end{align}
-
-The parametric equation for CF is given by
+Hence the normal equation of side $AD$ is 
 \begin{align}
-\vec{x} &= \vec{C} + k\vec{m}
+    \myvec{\frac{3}{2} & \frac{9}{2}}\vec{x}&=\myvec{\frac{3}{2} & \frac{9}{2}}\myvec{1\\-1}\\
+    \myvec{\frac{3}{2} & \frac{9}{2}}\vec{x}&=-3
 \end{align}
 
-where
 
+The normal equation for the side $BE$ is
 \begin{align}
-\vec{m} &= \vec{F} -\vec{C}\\
-&= \myvec{\frac{-3}{2}\\\frac{5}{2}} -\myvec{-3\\ -5}\\
-&= \myvec{\frac{3}{2}\\\frac{15}{2}}
+\vec{n}^{\top}\myvec{\vec{x}-\vec{B}}&=0\\
+\vec{n}^{\top}\vec{x}&=\vec{n}^{\top}\vec{B}
 \end{align}
-
-Hence we get,
-\begin{align}
-\vec{CF}: \vec{x} = &\myvec{-3\\-5} + k \myvec{\frac{3}{2}\\\frac{15}{2}}
-\end{align}
-
-So the  equations of AD,BE,CF are:
+Now we should find $\vec{n}$ so that we can find $\vec{n}^{\top}$.
 
 \begin{align}
-\vec{AD}: \vec{x} = &\myvec{1\\-1} + k \myvec{\frac{-9}{2}\\\frac{3}{2}}\\
-\vec{BE}: \vec{x} = &\myvec{-4\\6} + k \myvec{3\\-9}\\
-\vec{CF}: \vec{x} = &\myvec{-3\\-5} + k \myvec{\frac{3}{2}\\\frac{15}{2}}
+  \vec{n} &= \myvec{0 & 1\\-1 & 0}\vec{m}
+\end{align}
+Where $\vec{m} = \vec{E}- \vec{B}$ for median $\vec{BE}$
+\begin{align}
+\vec{m}&=\myvec{-1\\-3} - \myvec{-4\\6}\\
+&=\myvec{3\\-9}
 \end{align}
 
+we can use this to obtain vector $\vec{n}$
+\begin{align}
+\vec{n} &= \myvec{0 & 1\\
+  -1 & 0}\myvec{3\\-9}
+ = \myvec{-9\\-3}
+\end{align}
+The transpose of $\vec{n}$ is
+\begin{align}
+  \vec{n}^{\top}&=\myvec{-9 & -3}
+\end{align}
+Hence the normal equation of side $BE$ is 
+\begin{align}
+    \myvec{-9 & -3}\vec{x}&=\myvec{-9 & -3}\myvec{-4\\6}\\
+    \implies
+    \myvec{-9 & -3}\vec{x}&=18
+\end{align}
+
+
+
+The normal equation for the side $CF$ is
+\begin{align}
+\vec{n}^{\top}\myvec{\vec{x}-\vec{C}}&=0\\
+\implies
+\vec{n}^{\top}\vec{x}&=\vec{n}^{\top}\vec{C}
+\end{align}
+Now we should find $\vec{n}$ so that we can find $\vec{n}^{\top}$.
+
+\begin{align}
+  \vec{n} &= \myvec{0 & 1\\-1 & 0}\vec{m}
+\end{align}
+Where $\vec{m} = \vec{F}- \vec{C}$ for median $\vec{CF}$
+\begin{align}
+\implies
+\vec{m}&=\myvec{\frac{-3}{2}\\\frac{5}{2}} - \myvec{-3\\-5}\\
+&=\myvec{\frac{3}{2}\\\frac{15}{2}}
+\end{align}
+
+we can use this to obtain vector $\vec{n}$
+\begin{align}
+\vec{n} &= \myvec{0 & 1\\
+  -1 & 0}\myvec{\frac{3}{2}\\\frac{15}{2}}
+ = \myvec{\frac{15}{2}\\\frac{-3}{2}}
+\end{align}
+The transpose of $\vec{n}$ is
+\begin{align}
+  \vec{n}^{\top}&=\myvec{\frac{15}{2} & \frac{-3}{2}}
+\end{align}
+Hence the normal equation of side $AD$ is 
+\begin{align}
+    \myvec{\frac{15}{2} & \frac{-3}{2}}\vec{x}&=\myvec{\frac{15}{2} & \frac{-3}{2}}\myvec{-3\\-5}\\
+    \implies
+   \myvec{\frac{15}{2} & \frac{-3}{2}}\vec{x}&=-15
+\end{align}
+
+The equations of the medians AD,BE,CF are:
+
+\begin{enumerate}
+ \item $AD$: \myvec{\frac{3}{2} & \frac{9}{2}}\vec{x}&=-3
+ \item $BE$: \myvec{-9 & -3}\vec{x}&=18
+ \item $CF$: \myvec{\frac{15}{2} & \frac{-3}{2}}\vec{x}&=-15
+\end{enumerate}
+ 
 \end{flushleft}
+
+\begin{figure}[h]
+\centering
+\includegraphics [width=\columnwidth] {./figs/diagram.png}
+\caption{The triangle ABC and the medians AD,BE,CF plotted using python}
+\label{diagram}
+\end{figure}
 
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
