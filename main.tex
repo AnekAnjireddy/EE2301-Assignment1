@@ -199,27 +199,27 @@ Given this information and using the midpoint values found in the questions 1.2.
 \end{align}
 
 The normal form of the equation of a line between arbitary points A and B i.e, $\vec{AB}$ is
-\begin{align}
-\vec{n}^{\top}\myvec{\vec{x}-\vec{A}}=0 \label{normal}
-\end{align}
+\begin{equation}
+\vec{n}^{\top}\myvec{\vec{x}-\vec{A}}=0 \label{eq:normal}
+\end{equation}
 where
-\begin{align}
-\vec{n}^{\top}\vec{m}&=\vec{n}^{\top}\myvec{\vec{B}-\vec{A}}=0 \label{findm}
-\end{align}
-or,\begin{align}
-\vec{n}&=\myvec{0 &1 \\-1 & 0}\vec{m} \label{findn}
-\end{align}
+\begin{equation}
+\vec{n}^{\top}\vec{m}=\vec{n}^{\top}\myvec{\vec{B}-\vec{A}}=0 \label{eq:findm}
+\end{equation}
+or,\begin{equation}
+\vec{n}=\myvec{0 &1 \\-1 & 0}\vec{m} \label{eq:findn}
+\end{equation}
 
 \begin{enumerate}
-\item Using the form mentioned in \eqref{normal}
-	The normal equation for the median $\vec{AD}$ is
+\item Using the form mentioned in \eqref{eq:normal}
+	The normal equation for the median $AD$ is
 	\begin{align}
 	\vec{n}^{\top}\myvec{\vec{x}-\vec{A}}&=0\\
 	\implies
 	\vec{n}^{\top}\vec{x}&=\vec{n}^{\top}\vec{A}
 	\end{align}
 	
-	Using the equation \eqref{findm} for the median $\vec{AD}$
+	Using the equation \eqref{eq:findm} for the median $AD$
 	$\vec{m} = \vec{D}- \vec{A}$ 
 	\begin{align}
 	\implies
@@ -227,7 +227,7 @@ or,\begin{align}
 	&=\myvec{\frac{-9}{2}\\\frac{3}{2}}
 	\end{align}
 
-	Using the formula \eqref{findn} 
+	Using the formula \eqref{eq:findn} 
 	We can obtain vector $\vec{n}$
 	\begin{align}
 	\vec{n} &= \myvec{0 & 1\\
@@ -235,50 +235,53 @@ or,\begin{align}
  	= \myvec{\frac{3}{2}\\\frac{9}{2}}
 	\end{align}
 
-	Hence the normal equation of median $\vec{AD}$ is 
+	Hence the normal equation of median $AD$ is 
 	\begin{align}
         \myvec{\frac{3}{2} & \frac{9}{2}}\vec{x}&=\myvec{\frac{3}{2} & \frac{9}{2}}\myvec{1\\-1}\\
+        \implies 
         \myvec{\frac{3}{2} & \frac{9}{2}}\vec{x}&=-3
 	\end{align}
 
 
-\item Using the form mentioned in \eqref{normal}
-	The normal equation for the median $\vec{BE}$ is
+\item Using the form mentioned in \eqref{eq:normal}
+	The normal equation for the median $BE$ is
 	\begin{align}
 	\vec{n}^{\top}\myvec{\vec{x}-\vec{B}}&=0\\
+	\implies 
 	\vec{n}^{\top}\vec{x}&=\vec{n}^{\top}\vec{B}
 	\end{align}
 	
-	Using the equation \eqref{findm} for the median $\vec{BE}$
+	Using the equation \eqref{eq:findm} for the median $BE$
 	$\vec{m} = \vec{E}- \vec{B}$ 
 	\begin{align}
+	\implies
 	\vec{m}&=\myvec{-1\\-3} - \myvec{-4\\6}\\
 	&=\myvec{3\\-9}
 	\end{align}
 
-	Using the formula \eqref{findn},we can obtain vector $\vec{n}$
+	Using the formula \eqref{eq:findn},we can obtain vector $\vec{n}$
 	\begin{align}
 	\vec{n} &= \myvec{0 & 1\\
 	 -1 & 0}\myvec{3\\-9}
 	 = \myvec{-9\\-3}
 	\end{align}
 
-	Hence the normal equation of median $\vec{BE}$ is 
+	Hence the normal equation of median $BE$ is 
 	\begin{align}
         \myvec{-9 & -3}\vec{x}&=\myvec{-9 & -3}\myvec{-4\\6}\\
         \implies
         \myvec{-9 & -3}\vec{x}&=18
 	\end{align}
 
-\item Using the form mentioned in \eqref{normal}
-	The normal equation for the median $\vec{CF}$ is
+\item Using the form mentioned in \eqref{eq:normal}
+	The normal equation for the median $CF$ is
 	\begin{align}
 	\vec{n}^{\top}\myvec{\vec{x}-\vec{C}}&=0\\
 	\implies
 	\vec{n}^{\top}\vec{x}&=\vec{n}^{\top}\vec{C}
 	\end{align}
 	
-	Using the equation \eqref{findm} for the median $\vec{CF}$
+	Using the equation \eqref{eq:findm} for the median $CF$
 	 $\vec{m} = \vec{F}- \vec{C}$ 
 	\begin{align}
 	\implies
@@ -286,28 +289,21 @@ or,\begin{align}
 	&=\myvec{\frac{3}{2}\\\frac{15}{2}}
 	\end{align}
 
-	Using the formula \eqref{findn}, we can obtain vector $\vec{n}$
+	Using the formula \eqref{eq:findn}, we can obtain vector $\vec{n}$
 	\begin{align}
 	\vec{n} &= \myvec{0 & 1\\
  	 -1 & 0}\myvec{\frac{3}{2}\\\frac{15}{2}}
  	= \myvec{\frac{15}{2}\\\frac{-3}{2}}
 	\end{align}
 
-	Hence the normal equation of median $\vec{CF}$ is 
+	Hence the normal equation of median $CF$ is 
 	\begin{align}
         \myvec{\frac{15}{2} & \frac{-3}{2}}\vec{x}&=\myvec{\frac{15}{2} & \frac{-3}{2}}\myvec{-3\\-5}\\
        \implies
        \myvec{\frac{15}{2} & \frac{-3}{2}}\vec{x}&=-15
 	\end{align}
 \end{enumerate}
-The equations of the medians $\vec{AD,BE,CF}$ are:
 
-\begin{enumerate}
- \item $\vec{AD}: \myvec{\frac{3}{2} & \frac{9}{2}}\vec{x}=-3$
- \item $\vec{BE}: \myvec{-9 & -3}\vec{x}=18$
- \item $\vec{CF}: \myvec{\frac{15}{2}  &\frac{-3}{2}}\vec{x}=-15$
-\end{enumerate}
- 
 
 \begin{figure}[h]
 \centering
